@@ -32,10 +32,40 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "import": "./dist/utils.js"
     }
   },
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/css": "^1.0.0",
+    "@vanilla-extract/dynamic": "^2.0.0",
+    "@vanilla-extract/recipes": "^0.5.0"
+  },
+  "peerDependenciesMeta": {
+    "@vanilla-extract/dynamic": {
+      "optional": true
+    },
+    "@vanilla-extract/recipes": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@materialx/config": "workspace:^",
+    "@vanilla-extract/css": "^1.17.4",
+    "@vanilla-extract/dynamic": "^2.1.5",
+    "@vanilla-extract/recipes": "^0.5.7",
+    "@vanilla-extract/vite-plugin": "^5.0.7",
+    "tsdown": "^0.12.9",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@vanilla-extract/private": "^1.0.9"
   }
 }

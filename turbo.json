@@ -1,14 +1,18 @@
 {
   "$schema": "./node_modules/turbo/schema.json",
+  "ui": "tui",
   "tasks": {
     "build": {
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": [
         "dist/**"
       ]
     },
-    "check-types": {
+    "lint": {
       "dependsOn": [
-        "^check-types"
+        "^lint"
       ]
     },
     "dev": {

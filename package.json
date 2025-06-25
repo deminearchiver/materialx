@@ -10,6 +10,9 @@
     "./packages/material2/*",
     "./packages/material3/*"
   ],
+  "scripts": {
+    "build:packages": "turbo run build --filter=!./docs"
+  },
   "devDependencies": {
     "@biomejs/biome": "^2.0.5",
     "@changesets/cli": "^2.29.5",
