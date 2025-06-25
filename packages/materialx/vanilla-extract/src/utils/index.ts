@@ -59,3 +59,5 @@ export const mapTokens = <
   };
   return processTokens(...tokens) as any;
 };
+
+export type { CSSVarFunction } from "@vanilla-extract/private";

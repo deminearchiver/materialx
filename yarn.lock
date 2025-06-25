@@ -1322,6 +1322,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material3/solid@workspace:packages/material3/solid":
+  version: 0.0.0-use.local
+  resolution: "@material3/solid@workspace:packages/material3/solid"
+  languageName: unknown
+  linkType: soft
+
+"@material3/vanilla-extract@workspace:packages/material3/vanilla-extract":
+  version: 0.0.0-use.local
+  resolution: "@material3/vanilla-extract@workspace:packages/material3/vanilla-extract"
+  dependencies:
+    "@materialx/config": "workspace:^"
+    "@materialx/material-color-utilities": "workspace:^"
+    "@materialx/vanilla-extract": "workspace:^"
+    "@vanilla-extract/css": "npm:^1.17.4"
+    "@vanilla-extract/dynamic": "npm:^2.1.5"
+    "@vanilla-extract/recipes": "npm:^0.5.7"
+    "@vanilla-extract/vite-plugin": "npm:^5.0.7"
+    tsdown: "npm:^0.12.9"
+    typescript: "npm:^5.8.3"
+    vitest: "npm:^3.2.4"
+  peerDependencies:
+    "@vanilla-extract/css": ^1.0.0
+    "@vanilla-extract/recipes": ^0.5.0
+  languageName: unknown
+  linkType: soft
+
 "@materialx/config@workspace:^, @materialx/config@workspace:packages/materialx/config":
   version: 0.0.0-use.local
   resolution: "@materialx/config@workspace:packages/materialx/config"
@@ -1347,7 +1373,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@materialx/material-color-utilities@workspace:packages/materialx/material-color-utilities":
+"@materialx/material-color-utilities@workspace:^, @materialx/material-color-utilities@workspace:packages/materialx/material-color-utilities":
   version: 0.0.0-use.local
   resolution: "@materialx/material-color-utilities@workspace:packages/materialx/material-color-utilities"
   dependencies:
@@ -1358,7 +1384,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@materialx/vanilla-extract@workspace:packages/materialx/vanilla-extract":
+"@materialx/vanilla-extract@workspace:^, @materialx/vanilla-extract@workspace:packages/materialx/vanilla-extract":
   version: 0.0.0-use.local
   resolution: "@materialx/vanilla-extract@workspace:packages/materialx/vanilla-extract"
   dependencies:

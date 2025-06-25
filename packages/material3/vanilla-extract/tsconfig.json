@@ -1,0 +1,3 @@
+{
+  "extends": "@materialx/config/tsconfig/web"
+}
