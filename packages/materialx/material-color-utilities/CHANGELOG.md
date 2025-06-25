@@ -1,5 +1,11 @@
 # @materialx/material-color-utilities
 
+## 0.4.2
+
+### Patch Changes
+
+- bd10711: Update README.md
+
 ## 0.4.1
 
 ### Patch Changes
