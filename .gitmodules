@@ -1,3 +1,0 @@
-[submodule "packages/material-color-utilities"]
-	path = packages/material-color-utilities
-	url = git@github.com:deminearchiver/material-color-utilities-typescript.git
