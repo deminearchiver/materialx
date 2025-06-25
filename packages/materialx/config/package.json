@@ -2,6 +2,19 @@
   "private": true,
   "name": "@materialx/config",
   "type": "module",
-  "exports": {},
-  "packageManager": "yarn@4.9.2"
+  "exports": {
+    "./tsconfig/*": "./tsconfig/presets/*.json"
+  },
+  "packageManager": "yarn@4.9.2",
+  "peerDependencies": {
+    "typescript": "*"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
 }

@@ -1,1 +1,61 @@
-{}
+{
+  "name": "@materialx/material-color-utilities",
+  "version": "0.4.0",
+  "description": "Algorithms and utilities that power the Material Design 3 (M3) color system, including choosing theme colors from images and creating tones of colors; all in a new color space.",
+  "keywords": [
+    "material",
+    "material design",
+    "material3",
+    "material you",
+    "color extraction",
+    "theming"
+  ],
+  "author": "Material Eng",
+  "contributors": [
+    {
+      "name": "deminearchiver",
+      "url": "https://github.com/deminearchiver"
+    }
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/deminearchiver/material-color-utilities-typescript#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deminearchiver/material-color-utilities-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deminearchiver/material-color-utilities-typescript/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "./dist/**/*"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.ts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "@material/material-color-utilities": "workspace:^",
+    "@materialx/config": "workspace:^",
+    "tsdown": "^0.12.9",
+    "typescript": "^5.8.3"
+  }
+}
