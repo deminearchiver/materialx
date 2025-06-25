@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "name": "@materialx/config",
+  "type": "module",
+  "packageManager": "yarn@4.9.2",
+  "exports": {}
+}

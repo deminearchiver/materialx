@@ -1,0 +1,39 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "lineWidth": 80
+  },
+  "assist": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": false
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "trailingCommas": "all"
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "quoteProperties": "preserve"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "double"
+    }
+  },
+  "vcs": {
+    "enabled": false
+  }
+}
