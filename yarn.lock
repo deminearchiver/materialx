@@ -1203,6 +1203,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@materialx/vanilla-extract@workspace:packages/materialx/vanilla-extract":
+  version: 0.0.0-use.local
+  resolution: "@materialx/vanilla-extract@workspace:packages/materialx/vanilla-extract"
+  languageName: unknown
+  linkType: soft
+
 "@mdx-js/mdx@npm:^3.1.0":
   version: 3.1.0
   resolution: "@mdx-js/mdx@npm:3.1.0"

@@ -1,0 +1,41 @@
+{
+  "name": "@materialx/vanilla-extract",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": {
+    "name": "deminearchiver",
+    "url": "https://github.com/deminearchiver"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/deminearchiver/materialx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deminearchiver/materialx.git",
+    "directory": "packages/materialx/vanilla-extract"
+  },
+  "bugs": {
+    "url": "https://github.com/deminearchiver/materialx/issues"
+  },
+  "sideEffects": false,
+  "files": [
+    "./dist/**/*"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  }
+}
