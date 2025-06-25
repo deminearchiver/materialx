@@ -1,5 +1,12 @@
 # @materialx/material-color-utilities
 
+## 0.4.3
+
+### Patch Changes
+
+- 007c0fc: Add code splitting
+- 007c0fc: Move to ESM-only
+
 ## 0.4.2
 
 ### Patch Changes

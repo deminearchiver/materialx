@@ -3,7 +3,7 @@ import { createThemeContract } from "@vanilla-extract/css";
 import {
   hexFromArgb,
   type DynamicScheme,
-} from "@material/material-color-utilities";
+} from "@materialx/material-color-utilities";
 import type { BaselinePaletteTokens } from "./md-ref-palette";
 
 export type BaselineColorTokens<T> = {

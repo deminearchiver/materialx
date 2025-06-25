@@ -38,6 +38,7 @@
       "import": "./dist/utils.js"
     }
   },
+  "packageManager": "yarn@4.9.2",
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown"

@@ -5,5 +5,4 @@ export default defineConfig({
   platform: "neutral",
   format: "esm",
   dts: true,
-  skipNodeModulesBundle: true,
 });

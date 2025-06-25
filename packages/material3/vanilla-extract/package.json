@@ -34,6 +34,7 @@
       "import": "./dist/index.js"
     }
   },
+  "packageManager": "yarn@4.9.2",
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown"

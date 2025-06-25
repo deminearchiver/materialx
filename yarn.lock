@@ -1322,6 +1322,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material3/sass@workspace:packages/material3/sass":
+  version: 0.0.0-use.local
+  resolution: "@material3/sass@workspace:packages/material3/sass"
+  languageName: unknown
+  linkType: soft
+
 "@material3/solid@workspace:packages/material3/solid":
   version: 0.0.0-use.local
   resolution: "@material3/solid@workspace:packages/material3/solid"
