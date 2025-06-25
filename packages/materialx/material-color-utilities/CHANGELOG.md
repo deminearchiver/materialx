@@ -1,5 +1,11 @@
 # @materialx/material-color-utilities
 
+## 0.4.1
+
+### Patch Changes
+
+- a1bee15: Add README.md
+
 ## 0.4.0
 
 ### Minor Changes
