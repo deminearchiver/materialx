@@ -1,0 +1,103 @@
+{
+  "private": true,
+  "name": "unplugin-solid",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./astro": {
+      "types": "./dist/astro.d.ts",
+      "default": "./dist/astro.js"
+    },
+    "./esbuild": {
+      "types": "./dist/esbuild.d.ts",
+      "default": "./dist/esbuild.js"
+    },
+    "./farm": {
+      "types": "./dist/farm.d.ts",
+      "default": "./dist/farm.js"
+    },
+    "./rolldown": {
+      "types": "./dist/rolldown.d.ts",
+      "default": "./dist/rolldown.js"
+    },
+    "./rollup": {
+      "types": "./dist/rollup.d.ts",
+      "default": "./dist/rollup.js"
+    },
+    "./rspack": {
+      "types": "./dist/rspack.d.ts",
+      "default": "./dist/rspack.js"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "default": "./dist/vite.js"
+    },
+    "./webpack": {
+      "types": "./dist/webpack.d.ts",
+      "default": "./dist/webpack.js"
+    }
+  },
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "@materialx/config": "workspace:^",
+    "@types/babel__core": "^7",
+    "@types/node": "^24.0.4",
+    "astro": "^5.10.1",
+    "rollup": "^4.44.1",
+    "tsdown": "^0.12.9",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.27.7",
+    "@babel/preset-typescript": "^7.27.1",
+    "babel-preset-solid": "^1.9.6",
+    "merge-anything": "^6.0.6",
+    "solid-refresh": "^0.7.5",
+    "unplugin": "^2.3.5",
+    "vitefu": "^1.0.7"
+  },
+  "peerDependencies": {
+    "@farmfe/core": ">=1",
+    "astro": ">=4",
+    "esbuild": "*",
+    "rolldown": "*",
+    "rollup": "^3",
+    "rspack": "*",
+    "vite": ">=3",
+    "webpack": "*"
+  },
+  "peerDependenciesMeta": {
+    "@farmfe/core": {
+      "optional": true
+    },
+    "astro": {
+      "optional": true
+    },
+    "esbuild": {
+      "optional": true
+    },
+    "rolldown": {
+      "optional": true
+    },
+    "rollup": {
+      "optional": true
+    },
+    "rspack": {
+      "optional": true
+    },
+    "vite": {
+      "optional": true
+    }
+  }
+}

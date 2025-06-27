@@ -1,14 +1,19 @@
 export type Tokens<T = unknown> = {
   [key: string]: T | Tokens<T>;
+  [key: number]: never;
 };
 
 export type TokensLeaf<T extends Tokens> = T extends Tokens<infer U>
   ? U
   : never;
 
-export type MapLeafNodes<T extends Tokens, U> = {
-  [K in keyof T]: T[K] extends Tokens ? MapLeafNodes<T[K], U> : U;
-};
+type MapLeafNodesInner<T extends Tokens<any>, U> = {
+  [K in keyof T]: T[K] extends Tokens<any> ? MapLeafNodesInner<T[K], U> : U;
+} & { [key: number]: never };
+
+export type MapLeafNodes<T extends Tokens<any>, U> = T extends Tokens<U>
+  ? T
+  : MapLeafNodesInner<T, U>;
 
 // type ValidateTokens<T extends Tokens[], U, S> = {
 //   [K in keyof T]: MapLeafNodes<T[0], unknown> extends MapLeafNodes<
@@ -32,16 +37,7 @@ export const mapTokens = <
       ? T[K]
       : never;
   }
-): {
-  [K in keyof T]: MapLeafNodes<T[0], unknown> extends MapLeafNodes<
-    T[K],
-    unknown
-  >
-    ? true
-    : false;
-} extends true[]
-  ? MapLeafNodes<T[0], ReturnType<U>>
-  : never => {
+): MapLeafNodes<T[0], ReturnType<U>> => {
   const processTokens = (...tokens: Tokens<unknown>[]): Tokens<unknown> => {
     const result: Tokens<unknown> = {};
     const [first, ...rest] = tokens;

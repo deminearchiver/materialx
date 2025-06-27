@@ -1,6 +1,30 @@
 {
   "private": true,
   "name": "@material3/solid",
+  "version": "0.0.1",
   "type": "module",
-  "packageManager": "yarn@4.9.2"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "solid": "./dist/index.jsx",
+      "default": "./dist/index.js"
+    }
+  },
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "@materialx/config": "workspace:^",
+    "solid-js": "^1.9.7",
+    "tsdown": "^0.12.9",
+    "typescript": "^5.8.3",
+    "unplugin-solid": "workspace:^",
+    "vite-plugin-solid": "^2.11.7",
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.0"
+  }
 }
