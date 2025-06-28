@@ -222,8 +222,6 @@ export const Solid: UnpluginInstance<Options | undefined, false> =
     let projectRoot = process.cwd();
     let isTestMode = false;
 
-    const isVite6 = meta.framework === "vite";
-
     return {
       name: "unplugin-solid",
       enforce: "pre",
@@ -290,6 +288,9 @@ export const Solid: UnpluginInstance<Options | undefined, false> =
               }
             }
           }
+
+          const version = (await import("vite")).version;
+          const isVite6 = version.startsWith("6.");
 
           return {
             /**
