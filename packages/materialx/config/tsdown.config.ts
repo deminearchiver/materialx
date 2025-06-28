@@ -1,8 +1,11 @@
 import { defineConfig } from "tsdown";
 
 export default defineConfig({
-  entry: { color: "./src/color", "md-comp-ripple": "./src/md-comp-ripple.ts" },
-  platform: "neutral",
+  entry: {
+    tsdown: "./src/tsdown/index.ts",
+  },
+  target: "esnext",
   format: "esm",
+  platform: "node",
   dts: true,
 });

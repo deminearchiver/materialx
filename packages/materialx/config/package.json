@@ -3,18 +3,31 @@
   "name": "@materialx/config",
   "type": "module",
   "exports": {
+    "./tsdown": {
+      "types": "./dist/tsdown.d.ts",
+      "default": "./dist/tsdown.js"
+    },
     "./tsconfig/*": "./tsconfig/presets/*.json"
   },
   "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  },
   "peerDependencies": {
+    "tsdown": "*",
     "typescript": "*"
   },
   "peerDependenciesMeta": {
+    "tsdown": {
+      "optional": true
+    },
     "typescript": {
       "optional": true
     }
   },
   "devDependencies": {
+    "tsdown": "^0.12.9",
     "typescript": "^5.8.3"
   }
 }

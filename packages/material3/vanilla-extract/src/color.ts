@@ -157,7 +157,7 @@ export const createColorTokens = (): ColorTokens<CSSVarFunction> => {
 };
 
 export const colorValuesFromDynamicScheme = (
-  scheme: DynamicScheme
+  scheme: DynamicScheme,
 ): ColorTokens<string> => {
   return {
     primaryPaletteKeyColor: hexFromArgb(scheme.primaryPaletteKeyColor),
@@ -165,7 +165,7 @@ export const colorValuesFromDynamicScheme = (
     tertiaryPaletteKeyColor: hexFromArgb(scheme.tertiaryPaletteKeyColor),
     neutralPaletteKeyColor: hexFromArgb(scheme.neutralPaletteKeyColor),
     neutralVariantPaletteKeyColor: hexFromArgb(
-      scheme.neutralVariantPaletteKeyColor
+      scheme.neutralVariantPaletteKeyColor,
     ),
     errorPaletteKeyColor: hexFromArgb(scheme.errorPaletteKeyColor),
     background: hexFromArgb(scheme.background),
@@ -609,15 +609,15 @@ const BASELINE_COLOR_VALUES: Record<
 export const baselineColorValuesFromPalette = (
   palette: BaselinePaletteTokens<string>,
   theme: Theme,
-  contrast: Contrast = "normal"
+  contrast: Contrast = "normal",
 ): BaselineColorTokens<string> =>
   BASELINE_COLOR_VALUES[theme][contrast](palette);
 
 export const dynamicOnlyColorValuesFromBaselineColorValues = (
-  color: BaselineColorTokens<string>
+  color: BaselineColorTokens<string>,
 ): DynamicOnlyColorTokens<string> => {
   return {
-    // TODO: Probably key colors aren't accessible in this context.
+    // TODO: Key colors aren't accessible in this context.
     primaryPaletteKeyColor: "",
     secondaryPaletteKeyColor: "",
     tertiaryPaletteKeyColor: "",
@@ -637,7 +637,7 @@ export const colorValuesFromPalette = (
   color: BaselineColorTokens<string>,
   palette: BaselinePaletteTokens<string>,
   theme: Theme,
-  contrast: Contrast = "normal"
+  contrast: Contrast = "normal",
 ): ColorTokens<string> => {
   return {
     ...baselineColorValuesFromPalette(palette, theme, contrast),

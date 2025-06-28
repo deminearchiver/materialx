@@ -36,6 +36,7 @@
   "dependencies": {
     "@solid-primitives/context": "^0.3.1",
     "@solid-primitives/event-listener": "^2.4.1",
+    "@solid-primitives/media": "^2.3.1",
     "@solid-primitives/presence": "^0.1.1",
     "@solid-primitives/refs": "^1.1.1",
     "@solid-primitives/utils": "^6.3.1",

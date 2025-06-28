@@ -1800,6 +1800,7 @@ __metadata:
     "@materialx/config": "workspace:^"
     "@solid-primitives/context": "npm:^0.3.1"
     "@solid-primitives/event-listener": "npm:^2.4.1"
+    "@solid-primitives/media": "npm:^2.3.1"
     "@solid-primitives/presence": "npm:^0.1.1"
     "@solid-primitives/refs": "npm:^1.1.1"
     "@solid-primitives/utils": "npm:^6.3.1"
@@ -1844,10 +1845,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@materialx/config@workspace:packages/materialx/config"
   dependencies:
+    tsdown: "npm:^0.12.9"
     typescript: "npm:^5.8.3"
   peerDependencies:
+    tsdown: "*"
     typescript: "*"
   peerDependenciesMeta:
+    tsdown:
+      optional: true
     typescript:
       optional: true
   languageName: unknown
@@ -2556,6 +2561,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@solid-primitives/media@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@solid-primitives/media@npm:2.3.1"
+  dependencies:
+    "@solid-primitives/event-listener": "npm:^2.4.1"
+    "@solid-primitives/rootless": "npm:^1.5.1"
+    "@solid-primitives/static-store": "npm:^0.1.1"
+    "@solid-primitives/utils": "npm:^6.3.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: 10c0/0044a51d845461f58b656f0a012d603a4ab84f8197f6a0e8a5acfed75d564033f3eb53cb45d602a2747a7036e9dd9ac867d9389ae3187d3939e0177e1ca51cc8
+  languageName: node
+  linkType: hard
+
 "@solid-primitives/presence@npm:^0.1.1":
   version: 0.1.1
   resolution: "@solid-primitives/presence@npm:0.1.1"
@@ -2575,6 +2594,28 @@ __metadata:
   peerDependencies:
     solid-js: ^1.6.12
   checksum: 10c0/6a0ff701ebdde8eaef27fda4887212bb340331e457c47f05c3142fb84c14cedc3631e561e18199d8fa0d887202ae81734854efd440f643ccc10a4ae69029561d
+  languageName: node
+  linkType: hard
+
+"@solid-primitives/rootless@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@solid-primitives/rootless@npm:1.5.1"
+  dependencies:
+    "@solid-primitives/utils": "npm:^6.3.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: 10c0/a990edf79ece27a454ecca7db5934fbd8fa4d2c7a2a4c62caae4db0593f7699f41ef30ea7b80b2fbe9d79e15891eccc4f79ed5a2088c12b4dcaf9d444a4d1093
+  languageName: node
+  linkType: hard
+
+"@solid-primitives/static-store@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@solid-primitives/static-store@npm:0.1.1"
+  dependencies:
+    "@solid-primitives/utils": "npm:^6.3.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: 10c0/71ac202c607bf85ac8017f98e935dfce8bada957ba313ec29a3d970fee26f4a5ec1adb96dbcc3553f95dcf45542c458b4946a9c5bbca96ac8331da7c76aa528c
   languageName: node
   linkType: hard
 
