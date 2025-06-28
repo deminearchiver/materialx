@@ -50,7 +50,7 @@
   "devDependencies": {
     "@materialx/config": "workspace:^",
     "@types/babel__core": "^7",
-    "@types/node": "^24.0.4",
+    "@types/node": "^24.0.7",
     "astro": "^5.10.1",
     "rollup": "^4.44.1",
     "tsdown": "^0.12.9",
