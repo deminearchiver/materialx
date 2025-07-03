@@ -4,6 +4,7 @@
   "packageManager": "yarn@4.9.2",
   "workspaces": [
     "./apps/*",
+    "./dev/*",
     "./docs",
     "./examples/*",
     "packages/*",
@@ -54,6 +55,7 @@
     "turbo": "^2.5.4"
   },
   "resolutions": {
-    "@material/material-color-utilities": "git@github.com:deminearchiver/material-color-utilities-typescript.git"
+    "@material/material-color-utilities": "git@github.com:deminearchiver/material-color-utilities-typescript.git",
+    "@vanilla-extract/vite-plugin/vite": "npm:^7.0.0"
   }
 }

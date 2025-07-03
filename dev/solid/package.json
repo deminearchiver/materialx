@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "@materialx/dev-solid",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/material-symbols-outlined": "^5.2.15",
+    "@fontsource-variable/material-symbols-rounded": "^5.2.15",
+    "@fontsource-variable/material-symbols-sharp": "^5.2.15",
+    "@fontsource-variable/roboto-flex": "^5.2.6",
+    "@material3/expressive-solid": "workspace:^",
+    "@materialx/material-color-utilities": "workspace:^",
+    "@vanilla-extract/css": "^1.17.4",
+    "@vanilla-extract/dynamic": "^2.1.5",
+    "@vanilla-extract/private": "^1.0.9",
+    "@vanilla-extract/recipes": "^0.5.7",
+    "solid-js": "^1.9.7"
+  },
+  "devDependencies": {
+    "@materialx/config": "workspace:^",
+    "@vanilla-extract/vite-plugin": "^5.1.0",
+    "typescript": "^5.8.3",
+    "unplugin-solid": "workspace:^",
+    "vite": "^7.0.0",
+    "vite-plugin-solid": "^2.11.7",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

@@ -1,0 +1,181 @@
+@use "sass:meta";
+@use "sass:list";
+@use "sass:map";
+
+@function vars() {
+  @return (
+    "ref": (
+      "typeface": (
+        "plain": null,
+        "brand": null,
+        "weight-regular": null,
+        "weight-medium": null,
+        "weight-bold": null,
+      ),
+      "palette": (),
+    ),
+    "sys": (
+      "color": (),
+      "shape": (
+        "corner-none": null,
+        "corner": (
+          "none": null,
+          "extra-small": null,
+          "small": null,
+          "medium": null,
+          "large": null,
+          "large-increased": null,
+          "extra-large": null,
+          "extra-large-increased": null,
+          "extra-extra-large": null,
+          "full": null,
+        ),
+        "corner-value": (
+          "none": null,
+          "extra-small": null,
+          "small": null,
+          "medium": null,
+          "large": null,
+          "large-increased": null,
+          "extra-large": null,
+          "extra-large-increased": null,
+          "extra-extra-large": null,
+        ),
+      ),
+      "elevation": (
+        "level0": null,
+        "level1": null,
+        "level2": null,
+        "level3": null,
+        "level4": null,
+        "level5": null,
+      ),
+      "typescale": (),
+      "state": (
+        "hovered": (
+          "state-layer-opacity": null,
+        ),
+        "focused": (
+          "state-layer-opacity": null,
+        ),
+        "pressed": (
+          "state-layer-opacity": null,
+        ),
+        "dragged": (
+          "state-layer-opacity": null,
+        ),
+      ),
+      "motion": (
+        "duration": (
+          "short1": null,
+          "short2": null,
+          "short3": null,
+          "short4": null,
+          "medium1": null,
+          "medium2": null,
+          "medium3": null,
+          "medium4": null,
+          "long1": null,
+          "long2": null,
+          "long3": null,
+          "long4": null,
+          "extra-long1": null,
+          "extra-long2": null,
+          "extra-long3": null,
+          "extra-long4": null,
+        ),
+        "easing": (
+          "linear": null,
+          "emphasized": null,
+          "emphasized-accelerate": null,
+          "emphasized-decelerate": null,
+          "standard": null,
+          "standard-accelerate": null,
+          "standard-decelerate": null,
+          "legacy": null,
+          "legacy-accelerate": null,
+          "legacy-decelerate": null,
+        ),
+        "spring": (
+          "fast": (
+            "spatial": (
+              "stiffness": null,
+              "damping": null,
+            ),
+            "effects": (
+              "stiffness": null,
+              "damping": null,
+            ),
+          ),
+          "default": (
+            "spatial": (
+              "stiffness": null,
+              "damping": null,
+            ),
+            "effects": (
+              "stiffness": null,
+              "damping": null,
+            ),
+          ),
+          "slow": (
+            "spatial": (
+              "stiffness": null,
+              "damping": null,
+            ),
+            "effects": (
+              "stiffness": null,
+              "damping": null,
+            ),
+          ),
+        ),
+        "path": null,
+      ),
+    )
+  );
+}
+
+@function _inner($tokens, $prefix: null, $path: null, $cache: ()) {
+  @each $token, $value in $tokens {
+    $property: if($prefix != null, "#{$prefix}-#{$token}", $token);
+    $path: if($path != null, "#{$path}->#{$token}", "#{$token}");
+    @if meta.type-of($value) == "map" {
+      $value: _inner($value, $prefix: $property, $cache: $cache, $path: $path);
+    } @else {
+      $value: $property;
+      @if map.has-key($cache, $value) {
+        $item: map.get($cache, $value);
+        $item: list.append($item, $path, "comma");
+        $cache: map.set($cache, $value, $item);
+      } @else {
+        $cache: map.set($cache, $value, ($path));
+      }
+    }
+
+    $tokens: map.set($tokens, $token, $value);
+  }
+  @each $property, $items in $cache {
+    @if list.length($items) > 1 {
+      @error "Duplicate property name `#{$property}` at paths: #{$items}.";
+    }
+  }
+  @return $tokens;
+}
+
+@function get-var-names($tokens) {
+  @return _inner($tokens, "--md");
+}
+
+$tokens: get-var-names(vars());
+
+@mixin debug-map($map, $indent: "") {
+  @each $key, $value in $map {
+    @if meta.type-of($value) == "map" {
+      @debug "#{$indent}#{$key}:";
+      @include debug-map($value, "----#{$indent}");
+    } @else {
+      @debug "#{$indent}#{$key}: #{$value}";
+    }
+  }
+}
+
+@include debug-map($tokens);

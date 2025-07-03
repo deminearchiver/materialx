@@ -1,0 +1,9 @@
+{
+  "extends": ["@materialx/config/tsconfig/web-solid"],
+  "compilerOptions": {
+    "paths": {
+      "~/*": ["./src/*"],
+    },
+  },
+  "include": ["./src"],
+}

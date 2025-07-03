@@ -1,0 +1,4 @@
+{
+  "extends": ["@materialx/config/tsconfig/node"],
+  "include": ["./vite.config.ts"],
+}

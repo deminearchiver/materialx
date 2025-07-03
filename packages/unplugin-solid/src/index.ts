@@ -216,7 +216,7 @@ const normalizeAliases = (alias: AliasOptions = []): Alias[] => {
 };
 
 export const Solid: UnpluginInstance<Options | undefined, false> =
-  createUnplugin((options = {}, meta) => {
+  createUnplugin((options = {}) => {
     let needHmr = false;
     let replaceDev = false;
     let projectRoot = process.cwd();
@@ -369,7 +369,7 @@ export const Solid: UnpluginInstance<Options | undefined, false> =
         },
         async handler(source, id) {
           // const isSsr = transformOptions && transformOptions.ssr;
-          const isSsr = false;
+          const isSsr = options.ssr ?? false;
           const currentFileExtension = getExtension(id);
 
           const extensionsToWatch = options.extensions || [];

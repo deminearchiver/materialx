@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "@material3/expressive-vanilla-extract",
+  "type": "module",
+  "packageManager": "yarn@4.9.2",
+  "devDependencies": {
+    "@materialx/config": "workspace:^",
+    "@vanilla-extract/vite-plugin": "^5.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}

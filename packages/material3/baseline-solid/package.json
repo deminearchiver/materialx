@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "name": "@material3/baseline-solid",
+  "type": "module",
+  "packageManager": "yarn@4.9.2"
+}
