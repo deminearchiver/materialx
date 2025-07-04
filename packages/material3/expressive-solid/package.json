@@ -24,7 +24,7 @@
     "tsdown": "^0.12.9",
     "typescript": "^5.8.3",
     "unplugin-solid": "workspace:^",
-    "vite": "^7.0.0"
+    "vite": "^7.0.2"
   },
   "dependencies": {
     "@materialx/vanilla-extract": "workspace:^",

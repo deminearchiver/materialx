@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.34.4",
-    "@astrojs/vercel": "^8.2.0",
-    "astro": "^5.10.2",
+    "@astrojs/vercel": "^8.2.1",
+    "astro": "^5.11.0",
     "sharp": "^0.34.2"
   },
   "devDependencies": {
-    "vercel": "^44.2.7"
+    "vercel": "^44.2.11"
   }
 }
