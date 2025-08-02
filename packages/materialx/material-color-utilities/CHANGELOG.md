@@ -1,5 +1,11 @@
 # @materialx/material-color-utilities
 
+## 0.4.5
+
+### Patch Changes
+
+- [`30644e0`](https://github.com/deminearchiver/materialx/commit/30644e0e18f4412df0612fc7fed4774f6bde6a79) Thanks [@deminearchiver](https://github.com/deminearchiver)! - Updated onSurfaceVariant color for better contrast ratio in 2025 specs.
+
 ## 0.4.4
 
 ### Patch Changes
