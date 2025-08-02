@@ -95,7 +95,7 @@
   "devDependencies": {
     "@material/material-color-utilities": "workspace:^",
     "@materialx/config": "workspace:^",
-    "tsdown": "^0.12.9",
-    "typescript": "^5.8.3"
+    "tsdown": "^0.13.1",
+    "typescript": "^5.9.2"
   }
 }

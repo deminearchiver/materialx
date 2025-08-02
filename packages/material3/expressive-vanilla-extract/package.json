@@ -5,8 +5,8 @@
   "packageManager": "yarn@4.9.2",
   "devDependencies": {
     "@materialx/config": "workspace:^",
-    "@vanilla-extract/vite-plugin": "^5.1.0",
+    "@vanilla-extract/vite-plugin": "^5.1.1",
     "tsup": "^8.5.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   }
 }

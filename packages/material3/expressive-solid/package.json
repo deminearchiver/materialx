@@ -19,12 +19,12 @@
   },
   "devDependencies": {
     "@materialx/config": "workspace:^",
-    "@vanilla-extract/vite-plugin": "^5.1.0",
+    "@vanilla-extract/vite-plugin": "^5.1.1",
     "solid-js": "^1.9.7",
-    "tsdown": "^0.12.9",
-    "typescript": "^5.8.3",
+    "tsdown": "^0.13.1",
+    "typescript": "^5.9.2",
     "unplugin-solid": "workspace:^",
-    "vite": "^7.0.2"
+    "vite": "^7.0.6"
   },
   "dependencies": {
     "@materialx/vanilla-extract": "workspace:^",

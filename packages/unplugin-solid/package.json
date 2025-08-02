@@ -50,12 +50,12 @@
   "devDependencies": {
     "@materialx/config": "workspace:^",
     "@types/babel__core": "^7.20.5",
-    "@types/node": "^24.0.10",
-    "astro": "^5.11.0",
-    "rollup": "^4.44.1",
-    "tsdown": "^0.12.9",
-    "typescript": "^5.8.3",
-    "vite": "^7.0.2",
+    "@types/node": "^24.1.0",
+    "astro": "^5.12.8",
+    "rollup": "^4.46.2",
+    "tsdown": "^0.13.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.0.6",
     "vitest": "^3.2.4"
   },
   "dependencies": {
@@ -65,7 +65,7 @@
     "merge-anything": "^6.0.6",
     "solid-refresh": "^0.7.5",
     "unplugin": "^2.3.5",
-    "vitefu": "^1.1.0"
+    "vitefu": "^1.1.1"
   },
   "peerDependencies": {
     "@farmfe/core": ">=1",
