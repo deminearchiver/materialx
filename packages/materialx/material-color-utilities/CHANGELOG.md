@@ -1,5 +1,11 @@
 # @materialx/material-color-utilities
 
+## 0.4.6
+
+### Patch Changes
+
+- [`7557441`](https://github.com/deminearchiver/materialx/commit/7557441d14da105c3e95c27d65b917bea82400b1) Thanks [@deminearchiver](https://github.com/deminearchiver)! - Update internal dependency to [`29e4420`](https://github.com/deminearchiver/material-color-utilities-typescript/commit/29e4420a229bd53e5a2538907f4d33e2cfd6d6fe).
+
 ## 0.4.5
 
 ### Patch Changes
