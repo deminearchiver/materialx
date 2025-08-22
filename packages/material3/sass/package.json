@@ -2,5 +2,5 @@
   "private": true,
   "name": "@material3/sass",
   "type": "module",
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "yarn@4.9.3"
 }

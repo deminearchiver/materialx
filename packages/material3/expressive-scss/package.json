@@ -3,5 +3,5 @@
   "name": "@material3/expressive-scss",
   "type": "module",
   "exports": {},
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "yarn@4.9.3"
 }
