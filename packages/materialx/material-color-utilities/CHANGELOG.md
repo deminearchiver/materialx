@@ -1,5 +1,11 @@
 # @materialx/material-color-utilities
 
+## 0.4.7
+
+### Patch Changes
+
+- [`8ff904c`](https://github.com/deminearchiver/materialx/commit/8ff904cd8f316a2d324057a1a4ec6d8e64680e61) Thanks [@deminearchiver](https://github.com/deminearchiver)! - Refined onBackground for 2025 spec on Watch.
+
 ## 0.4.6
 
 ### Patch Changes
