@@ -2035,10 +2035,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material/material-color-utilities@git@github.com:deminearchiver/material-color-utilities-typescript.git#commit=29e4420a229bd53e5a2538907f4d33e2cfd6d6fe":
+"@material/material-color-utilities@git@github.com:deminearchiver/material-color-utilities-typescript.git#commit=d81186f05ccbe31ed572e1efc5a4b2af25058fa8":
   version: 0.4.0
-  resolution: "@material/material-color-utilities@git@github.com:deminearchiver/material-color-utilities-typescript.git#commit=29e4420a229bd53e5a2538907f4d33e2cfd6d6fe"
-  checksum: 10c0/22587b98c190e29687e1456ff035efdf251a0f51f74d9e1c8a676f376c72916afd6233ea9d30adda92280d1cf72fcff7d132099b7cafa1a3cf093388c95f98e0
+  resolution: "@material/material-color-utilities@git@github.com:deminearchiver/material-color-utilities-typescript.git#commit=d81186f05ccbe31ed572e1efc5a4b2af25058fa8"
+  checksum: 10c0/06688e7faa7ea26ee56ab02aa019af7bf43dc4b9c5bfa2cde25729ba7e350a46ff2421f5d986408f104aff62c3f6a18b4c15ff4af3790fae24a3578c4cc29379
   languageName: node
   linkType: hard
 

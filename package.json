@@ -55,7 +55,7 @@
     "turbo": "^2.5.6"
   },
   "resolutions": {
-    "@material/material-color-utilities": "git@github.com:deminearchiver/material-color-utilities-typescript.git#commit=29e4420a229bd53e5a2538907f4d33e2cfd6d6fe",
+    "@material/material-color-utilities": "git@github.com:deminearchiver/material-color-utilities-typescript.git#commit=d81186f05ccbe31ed572e1efc5a4b2af25058fa8",
     "@vanilla-extract/vite-plugin/vite": "npm:^7.0.0"
   }
 }
