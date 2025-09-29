@@ -1,5 +1,11 @@
 # @materialx/material-color-utilities
 
+## 0.4.8
+
+### Patch Changes
+
+- [`c4966d6`](https://github.com/deminearchiver/materialx/commit/c4966d6c12e4d238771d2c88f0a04d3f24c68c98) Thanks [@deminearchiver](https://github.com/deminearchiver)! - Progress on aligning with reference implementation
+
 ## 0.4.7
 
 ### Patch Changes
