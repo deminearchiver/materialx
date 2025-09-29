@@ -1,4 +1,6 @@
 export {
+  LabPointProvider,
+  type PointProvider,
   QuantizerMap,
   QuantizerWu,
   QuantizerWsmeans,
