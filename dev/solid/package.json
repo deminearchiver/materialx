@@ -8,10 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource-variable/material-symbols-outlined": "^5.2.19",
-    "@fontsource-variable/material-symbols-rounded": "^5.2.19",
-    "@fontsource-variable/material-symbols-sharp": "^5.2.19",
-    "@fontsource-variable/roboto-flex": "^5.2.6",
+    "@fontsource-variable/material-symbols-outlined": "^5.2.24",
+    "@fontsource-variable/material-symbols-rounded": "^5.2.24",
+    "@fontsource-variable/material-symbols-sharp": "^5.2.24",
+    "@fontsource-variable/roboto-flex": "^5.2.8",
     "@material3/expressive-solid": "workspace:^",
     "@materialx/material-color-utilities": "workspace:^",
     "@vanilla-extract/css": "^1.17.4",
@@ -25,7 +25,7 @@
     "@vanilla-extract/vite-plugin": "^5.1.1",
     "typescript": "^5.9.2",
     "unplugin-solid": "^1.0.0",
-    "vite": "^7.1.3",
+    "vite": "^7.1.7",
     "vite-plugin-solid": "^2.11.8",
     "vite-tsconfig-paths": "^5.1.4"
   }

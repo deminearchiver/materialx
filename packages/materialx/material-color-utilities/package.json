@@ -87,7 +87,7 @@
       "import": "./dist/utils.js"
     }
   },
-  "packageManager": "yarn@4.9.3",
+  "packageManager": "yarn@4.10.3",
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown"
@@ -95,7 +95,7 @@
   "devDependencies": {
     "@material/material-color-utilities": "workspace:^",
     "@materialx/config": "workspace:^",
-    "tsdown": "^0.14.1",
+    "tsdown": "^0.15.5",
     "typescript": "^5.9.2"
   }
 }
